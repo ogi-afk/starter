@@ -1,0 +1,35 @@
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  max-width: 100%;
+
+  @include media-from(768) {
+  }
+
+  @include media-from(991) {
+    padding: 0 50px;
+  }
+
+  @include media-from(1024) {
+  }
+
+  @include media-from(1440) {
+    padding: 0 70px;
+  }
+
+  @include media-from(1920) {
+    max-width: 1920px;
+    padding: 0 95px;
+  }
+}
+
+@mixin main-grid {
+  display: grid;
+  gap: 0 16px;
+  grid-template-columns: repeat(12, 1fr);
+
+  @include media-from(1440) {
+    gap: 0 40px;
+  }
+}

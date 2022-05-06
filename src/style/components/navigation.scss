@@ -1,0 +1,11 @@
+.navigation {
+  font-size: 17px;
+  line-height: 20px;
+  color: white;
+
+  &__list {
+    display: flex;
+
+    gap: 34px;
+  }
+}

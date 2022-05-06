@@ -1,0 +1,135 @@
+.headline {
+  &__title {
+    &--h1 {
+      font-weight: 400;
+      font-size: 44px;
+      line-height: 48px;
+
+      @include media-from(1440) {
+        font-size: 80px;
+        line-height: 90px;
+      }
+    }
+
+    &--h2 {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 48px;
+      color: $color-white;
+
+      text-align: center;
+    }
+
+    &--h3 {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      color: $color-white;
+    }
+
+    &--h4 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: $color-white;
+    }
+
+    &--h5 {
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 30px;
+      color: $color-white;
+      @include media-from(1440) {
+        font-size: 35px;
+        line-height: 42px;
+      }
+    }
+  }
+  &__accent {
+    &--red {
+      color: $color-red;
+    }
+  }
+
+  &__subtitle {
+    &--sm {
+      font-size: 15px;
+      line-height: 18px;
+      color: $color-grey-secondary;
+
+      @include media-from(1440) {
+        font-size: 25px;
+        line-height: 29px;
+      }
+    }
+
+    &--md {
+      font-size: 18px;
+      line-height: 21px;
+      color: $color-white;
+      opacity: 0.3;
+    }
+    &--lg {
+      font-size: 15px;
+      line-height: 18px;
+      color: #ffffff;
+      opacity: 0.3;
+    }
+
+    &--xl {
+      font-size: 20px;
+      line-height: 42px;
+      color: $color-white;
+      opacity: 0.5;
+      text-align: center;
+
+      @include media-from(1440) {
+        font-size: 25px;
+        line-height: 42px;
+      }
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+
+    &--primary {
+      font-size: 22px;
+      line-height: 26px;
+      color: $color-grey-primary;
+
+      @include media-from(1440) {
+        font-size: 28px;
+        line-height: 38px;
+      }
+    }
+    &--secondary {
+      font-size: 22px;
+      line-height: 26px;
+      color: $color-white;
+      opacity: 0.8;
+
+      @include media-from(1440) {
+        font-size: 28px;
+        line-height: 38px;
+      }
+    }
+    &--tertiary {
+      font-size: 18px;
+      line-height: 21px;
+      color: $color-white;
+      opacity: 0.3;
+    }
+    &--quaternary {
+      font-size: 19px;
+      line-height: 23px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.7);
+
+      @include media-from(1440) {
+        font-size: 24px;
+        line-height: 29px;
+      }
+    }
+  }
+}
